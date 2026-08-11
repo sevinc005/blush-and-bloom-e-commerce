@@ -1,0 +1,132 @@
+.account-card-container {
+  max-width: 500px;
+  margin: 40px auto;
+  background-color: #ffffff;
+  border: 1.5px solid #dfc382; /* Qızılı çərçivə */
+  border-radius: 25px;
+  padding: 30px;
+  box-shadow: 0 10px 20px rgba(225, 175, 209, 0.2);
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Step İndikatoru */
+.step-indicator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+.step-circle {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #f3e5ec;
+  color: #888;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 0.85rem;
+  transition: all 0.3s ease;
+}
+
+.step-circle.active {
+  background-color: #e05275; /* Çəhrayı brend rəngi */
+  color: #ffffff;
+}
+
+.step-line {
+  flex: 1;
+  height: 2px;
+  background-color: #f3e5ec;
+  margin: 0 8px;
+  max-width: 50px;
+}
+
+.step-line.active {
+  background-color: #e05275;
+}
+
+/* Form Sahələri */
+.form-step h3 {
+  font-family: 'Playfair Display', serif;
+  color: #2c2523;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.3rem;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #4a3e3d;
+}
+
+.input-group input,
+.input-group textarea {
+  padding: 10px 14px;
+  border: 1px solid #ebd0d0;
+  border-radius: 12px;
+  outline: none;
+  font-size: 0.9rem;
+  background-color: #faf5f7;
+  transition: border-color 0.2s;
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+  border-color: #e05275;
+  background-color: #fff;
+}
+
+/* Təsdiq İcmalı */
+.summary-box {
+  background-color: #faf5f7;
+  padding: 15px;
+  border-radius: 12px;
+  border: 1px dashed #dfc382;
+  font-size: 0.85rem;
+  line-height: 1.8;
+  color: #2c2523;
+}
+
+/* Düymələr */
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 25px;
+}
+
+.btn-primary, .btn-secondary {
+  flex: 1;
+  padding: 10px 0;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.85rem;
+  cursor: pointer;
+  border: none;
+  transition: opacity 0.2s;
+}
+
+.btn-primary {
+  background-color: #e05275;
+  color: white;
+}
+
+.btn-secondary {
+  background-color: #f3e5ec;
+  color: #4a3e3d;
+}
+
+.btn-primary:hover, .btn-secondary:hover {
+  opacity: 0.9;
+}

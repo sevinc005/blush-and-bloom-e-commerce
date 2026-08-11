@@ -1,0 +1,233 @@
+.navbar-wrapper {
+  background-color: #f7a8c4; /* Şəkildəki çəhrayı arxa fon */
+  padding: 30px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1250px;
+  background-color: #E1AFD1; /* Kartın pastel krem/çəhrayı fonu */
+  border: 1.5px solid #dfc382; /* Qızılı incə çərçivə */
+  border-radius: 40px; /* Şəkildəki kimi oval künclər */
+  padding: 12px 35px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* Loqo Hissəsi */
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.brand-badge {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.badge-icon {
+  width: 85px;
+  height: 85px;
+  object-fit: contain;
+  transform: scale(2.2);
+}
+
+.badge-title {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #2c2523;
+  margin: 0;
+  line-height: 1;
+}
+
+.badge-title .ampersand {
+  color: #d4af37;
+  font-style: italic;
+}
+
+.badge-divider {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: 4px 0;
+}
+
+.divider-line {
+  flex: 1;
+  height: 1px;
+  background-color: #d4af37;
+}
+
+.heart-accent {
+  color: #d4af37;
+  font-size: 9px;
+  margin: 0 5px;
+}
+
+.badge-subtitle {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.65rem;
+  font-weight: 600;
+  color: #333;
+  letter-spacing: 3px;
+  margin: 0;
+}
+
+/* Şaquli Bölgü Xətləri */
+.nav-vertical-divider {
+  width: 1px;
+  height: 40px;
+  background-color: #e5c4c4;
+  margin: 0 20px;
+}
+
+.action-sub-divider {
+  width: 1px;
+  height: 30px;
+  background-color: #ebd0d0;
+}
+
+/* Axtarış Hissəsi */
+.navbar-center {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-search-container {
+  position: relative;
+  width: 100%;
+  max-width: 280px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 8px 38px 8px 18px;
+  background-color: #F5AFAF;
+  border: 1px solid #e2c0c0;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  color: #666;
+  outline: none;
+}
+
+.search-icon-inside {
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #e65c83; /* Axtarış lupasının çəhrayı rəngi */
+}
+
+/* İkonlar Və Mətnlər */
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.nav-actions-group {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.action-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  gap: 4px;
+}
+
+.icon-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* İkonların Şəkildəki Qırmızı-Çəhrayı Tonu */
+.bag-icon-pink, .heart-icon-pink, .user-icon-pink {
+  color: #e05275;
+  stroke-width: 1.5;
+}
+
+/* Bildiriş Sayğacları (Dairələr) */
+.badge-count {
+  position: absolute;
+  top: -6px;
+  right: -8px;
+  background-color: #e05275;
+  color: white;
+  font-size: 0.65rem;
+  font-weight: 700;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.action-label {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.65rem;
+  font-weight: 700;
+  color: #2c2523;
+  letter-spacing: 0.5px;
+}
+
+/* --- Kateqoriya Barının Stilləri --- */
+.navbar-main-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 1250px;
+  gap: 12px;
+}
+
+.categories-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  width: 100%;
+  background-color: rgba(225, 175, 209, 0.65); /* #E1AFD1 rənginin bir az yumşaq tonu */
+  border: 1px solid #dfc382; /* Qızılı incə çərçivə */
+  border-radius: 25px;
+  padding: 8px 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+}
+
+.category-btn {
+  background: transparent;
+  border: none;
+  color: #2c2523;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  padding: 6px 14px;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.category-btn:hover {
+  color: #e05275;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.category-btn.active {
+  background-color: #e05275; /* Çəhrayı brend rəngi */
+  color: #ffffff;
+  box-shadow: 0 2px 8px rgba(224, 82, 117, 0.3);
+}

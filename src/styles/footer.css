@@ -1,0 +1,194 @@
+.footer-wrapper {
+  background-color: #f7a8c4;
+  padding: 50px 20px 20px 20px;
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-container {
+  width: 100%;
+  max-width: 1250px;
+  background-color: #E1AFD1;
+  border: 1.5px solid #dfc382;
+  border-radius: 35px;
+  padding: 35px 40px 20px 40px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+}
+
+.footer-top-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1.5fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+/* Sütun Başlıqları */
+.footer-col-title {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.1rem;
+  color: #2c2523;
+  margin-bottom: 18px;
+  border-bottom: 1px solid #dfc382;
+  padding-bottom: 8px;
+  display: inline-block;
+}
+
+/* Brend Sütunu */
+.footer-brand-title {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.6rem;
+  color: #2c2523;
+  margin: 0 0 12px 0;
+}
+
+.footer-brand-title .ampersand {
+  color: #d4af37;
+  font-style: italic;
+}
+
+.footer-brand-desc {
+  font-size: 0.82rem;
+  color: #4a3e3d;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.social-links {
+  display: flex;
+  gap: 12px;
+}
+
+.social-icon {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background-color: #FAF0F6;
+  border: 1px solid #dfc382;
+  color: #e05275;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.social-icon:hover {
+  background-color: #e05275;
+  color: #ffffff;
+  transform: translateY(-3px);
+}
+
+/* FAQ Akkordeon */
+.faq-accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.faq-item {
+  background-color: rgba(255, 255, 255, 0.4);
+  border: 1px solid #ebd0d0;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.faq-question {
+  width: 100%;
+  padding: 10px 14px;
+  background: transparent;
+  border: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #2c2523;
+  cursor: pointer;
+  text-align: left;
+}
+
+.faq-answer {
+  padding: 0 14px 10px 14px;
+  font-size: 0.78rem;
+  color: #555;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Əlaqə Sütunu */
+.contact-info-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.contact-info-list li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.82rem;
+  color: #2c2523;
+}
+
+.contact-icon {
+  color: #e05275;
+  flex-shrink: 0;
+}
+
+.footer-divider {
+  height: 1px;
+  background-color: #dfc382;
+  margin: 30px 0 15px 0;
+  opacity: 0.6;
+}
+
+.footer-bottom-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.copyright-text {
+  font-size: 0.75rem;
+  color: #4a3e3d;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.heart-icon-inline {
+  color: #e05275;
+  fill: #e05275;
+}
+
+.policy-links {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.75rem;
+}
+
+.policy-links a {
+  color: #4a3e3d;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.policy-links a:hover {
+  color: #e05275;
+}
+
+
+@media (max-width: 900px) {
+  .footer-top-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+}
